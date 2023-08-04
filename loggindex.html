@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palmojac Login Page </title>
+    <link rel="stylesheet" href="loggstyle.css">
+</head>
+<body>
+    <nav>
+        <a href="#"><img src="images/palmojaclogo.png"  alt="logo"></a>
+    </nav>
+    <div class="form-wrapper">
+        <h2>Sign In</h2>
+        <form onsubmit="handleSubmit">
+            <div class="form-control">
+                <input type="text" required>
+                <label>Email or phone number</label>
+            </div>
+            <div class="form-control">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            <a href="/index.html#">
+            
+            
+            
+            
+            <button type="submit">Sign In</button>
+            <p id="demo"></p>
+
+
+                
+
+
+            <div class="form-help"> 
+                <div class="remember-me">
+                    <input type="checkbox" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+                <a href="#">Need help?</a>
+            </div>
+        </form>
+        <p><a href="/logindex.html">Sign up now</a></p>
+        <small>
+            This page is protected by Google reCAPTCHA to ensure you're not a bot. 
+            <a href="#">Learn more.</a>
+        </small>
+    </div>
+
+    <script>
+        function handleSubmit(e) {
+                    e.preventDefault
+            let password = document.getElementByType("password").value;
+
+            let text;
+             if ((password== "palmojac")) {
+                text = "Password Correct";
+                document.getElementById("demo").style.fontSize = "25px";
+                document.getElementById("demo").style.color = "Green";
+                window.location = "index.html";
+
+
+             } 
+             else {
+                text = "Password incorrect";
+                document.getElementById("demo").style.fontSize = "25px";
+                document.getElementById("demo").style.color = "red";
+            }
+            document.getElementById("demo").innerHTML = text;
+}
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+

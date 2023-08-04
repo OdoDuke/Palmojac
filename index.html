@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- PALMOJAC HEALTH APP-->
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PALMOJAC</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="../custom-scripts.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <!-- Header Start -->
+      <header>
+        <nav class="nav container">
+          <h2 class="nav_logo"><a href="#">PALMOJAC</a></h2>
+
+          <ul class="menu_items">
+            <img src="images/times.svg" alt="timesicon" id="menu_toggle" />
+            <li><a href="#" class="nav_link">Profile</a></li>
+            <li><a href="/chatbot/index.html" class="nav_link">Palm AI</a></li>
+            <li><a href="#" class="nav_link">Palm Meals</a></li>
+            <li><a href="/chatindex.html" class="nav_link">Palm Chat</a></li>
+            <li><a href="/workindex.html" class="nav_link">Palm Workout</a></li>
+          </ul>
+          <img src="images/bars.svg" alt="timesicon" id="menu_toggle" />
+        </nav>
+      </header>
+      <!-- Header End -->
+
+      <!-- Hero Start -->
+      <section class="Palmojac">
+        <div class="row container">
+          <div class="column">
+            <h2>Welcome to Palmojac - Your Health Hub!</h2>
+            <p>
+
+                At Palmojac, we are committed to helping you achieve your health and fitness goals with personalized workout plans, our intelligent health chatbot, and a vibrant community on WhatsApp.
+                
+                </p>
+
+                
+            <div class="buttons">
+              <button class="btn"><img src="images/Join_Us_4_-removebg-preview.png" style="border: single ;"  height="130" width="130"/></button>
+
+              <a href="/chatbot/index.html">
+              <button class="btn"><img src="images/Join_Us_3_-removebg-preview.png" style="border: single ;"  height="130" width="130"/></button></a>
+              <button class="btn"><img src="images/Join_Us_1_-removebg-preview.png" style="border: single ;"  height="130" width="130"/> </button>
+
+              <a href="/workindex.html">
+              <button class="btn"> <img src="images/Join_Us_2_-removebg-preview.png" style="border: single ;"  height="135" width="135"/>  </button>></a>
+            </div>
+            
+          </div>
+          <div class="column">
+            <img src="images/palmojaclogo.png" alt="Palmojac" class="Palmojac_img" />
+          </div>
+        </div>
+        <img src="images/bg-bottom-hero.png" alt="" class="curveImg" />
+      </section>
+      <!-- Hero End-->
+    </main>
+
+    <script>
+      const header = document.querySelector("header");
+      const menuToggler = document.querySelectorAll("#menu_toggle");
+
+      menuToggler.forEach(toggler => {
+        toggler.addEventListener("click", () => header.classList.toggle("showMenu"));
+      });
+    </script>
+  </body>
+</html>
+
