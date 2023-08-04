@@ -13,13 +13,14 @@
     </nav>
     <div class="form-wrapper">
         <h2>Sign In</h2>
-        <form onsubmit="handleSubmit">
+        <form >
             <div class="form-control">
                 <input type="text" required>
                 <label>Email or phone number</label>
             </div>
             <div class="form-control">
-                <input type="password" required>
+                <input type="password" id="password" required>
+                
                 <label>Password</label>
             </div>
             <a href="/index.html#">
@@ -28,6 +29,7 @@
             
             
             <button type="submit">Sign In</button>
+
             <p id="demo"></p>
 
 
@@ -50,9 +52,12 @@
     </div>
 
     <script>
+        console.log ("HI")
         function handleSubmit(e) {
-                    e.preventDefault
-            let password = document.getElementByType("password").value;
+    
+                   
+                    console.log ("Odo")
+            let password = document.getElementById("password").value;
 
             let text;
              if ((password== "palmojac")) {
@@ -65,11 +70,13 @@
              } 
              else {
                 text = "Password incorrect";
-                document.getElementById("demo").style.fontSize = "25px";
+                document.getElementById("demo").style.fontSize = "15px";
                 document.getElementById("demo").style.color = "red";
             }
             document.getElementById("demo").innerHTML = text;
+            e.preventDefault() 
 }
+        document.querySelector("form").addEventListener("submit",handleSubmit);
 
 
 

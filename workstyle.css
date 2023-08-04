@@ -11,6 +11,15 @@
   padding: 90px 0;
   background: #ffffff;
 }
+.imageheader{
+  display: flex;
+  justify-content: space-between;
+
+}
+.imageheader img{
+  height: 200px;
+  width: 200px
+}
 .pic{
   height: auto;
   width:  400px;
@@ -24,7 +33,11 @@
   justify-content: space-around;
 }
 .text{
-  width: 700px;
+ 
+  background-image: url("./images/istockphoto-1465410703-612x612-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: 80% 25%;
+  
 }
 .text h2{
   font-size: 100px;
