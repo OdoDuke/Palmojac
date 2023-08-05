@@ -9,11 +9,28 @@
   height: 100vh;
   width: 100%;
   padding: 90px 0;
-  background: #ffffff;
+  background: hsl(0, 50%, 100%);
+  
+}
+.imageheader{
+  display: flex;
+  justify-content: space-between;
+
+}
+.imageheader img{
+  height: 200px;
+  width: 200px
 }
 .pic{
   height: auto;
   width:  400px;
+  justify-content: space-around;
+ 
+}
+
+.doctor{
+  align-items:right ;
+  width: 10px;
 }
 .about{
   width: 1130px;
@@ -24,7 +41,11 @@
   justify-content: space-around;
 }
 .text{
-  width: 700px;
+ 
+  background-image: url("./images/istockphoto-1465410703-612x612-removebg-preview.png");
+  background-repeat: no-repeat;
+  background-position: 100% 25%;
+  
 }
 .text h2{
   font-size: 100px;
@@ -42,8 +63,8 @@ span{
 }
 .text p{
   font-size: 18px;
-  line-height: 25px;
-  letter-spacing: 1px;
+  line-height:25px;
+  letter-spacing: 0.5px;
 }
 .buttons{
   margin-top: 50px;

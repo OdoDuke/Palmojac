@@ -66,6 +66,10 @@ a {
 .Palmojac .row p {
   color: #04022ba8;
 }
+.Palmojac .paragraph{
+  font-size:x-large;
+  color: #f3b909fa;
+}
 .Palmojac .row h2 {
   font-size: 30px;
   margin-bottom: 16px;

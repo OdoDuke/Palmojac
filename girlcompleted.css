@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 main {
-  background: #7df3e9;
+  background: #ffffff;
 }
 .container {
   max-width: 1300px;
@@ -19,7 +19,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 10000;
 }
 .nav {
   display: flex;
@@ -72,6 +72,7 @@ a {
 .Palmojac .row h2 {
   font-size: 36px;
   margin-bottom: 16px;
+  
 }
 .Palmojac+ .column {
   width: 50%;
@@ -83,17 +84,17 @@ a {
 }
 .btn {
   padding: 14px 26px;
-  background: #2ec700ab ; 
+  background: #ffffff ; 
   color: #fcfcff;
-  border-radius: 50px;
+  border-radius: 30px;
   border: 2px solid #00c003;
   cursor: pointer;
   transition: all 0.3s ease;
-  
+  width: 180px;
   
 }
 .btn:hover {
-    background-color: #23fff8ed;
+    background-color: #2e959185;
     color: #132600;
 }
 
@@ -101,9 +102,10 @@ a {
     border: 2px solid #00a3c0;
     background: transparent;
     color: #230106;
+    border-radius: 30px;
   }
   .btn:first-child:hover {
-    background-color: #a0e400ed;
+    background-color: #a0e400aa;
     color: #00054f;
   }
 
@@ -182,7 +184,7 @@ a {
     font-size: 28px;
   }
   .buttons {
-    justify-content: left;
+    justify-content: center;
   }
   .btn {
     padding: 10px 16px;
