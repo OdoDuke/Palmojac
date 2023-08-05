@@ -24,13 +24,15 @@ body::before {
 }
 
 nav {
-    position: fixed;
-    padding: 25px 60px;
-    z-index: 1;
+    position:fixed;
+    top:0;
+    padding:0 60px 15px 60px;
+    height:150px;
 }
 
 nav a img {
     width: 167px;
+    height:100%;
 }
 
 .form-wrapper {
@@ -154,13 +156,29 @@ form .form-help :where(label, a) {
 .form-wrapper small a {
     color: #2b5e1a;
 }
+.submit-button {
+    padding:0.5rem 1rem;
+    border-radius: 30px;
+    outline:none;
+    border:1px solid #2b5e1a;
+    margin-block:0.7rem;
+    background-color:white;
+    transition:0.4s;
+    color:#2b5e1a;
+    cursor:pointer
+}
+.submit-button:hover{
+    background-color: #2b5e1a;
+    color:white;
+    border:1px solid transparent
+}
 
 @media (max-width: 740px) {
     body::before {
         display: none;
     }
 
-    nav, .form-wrapper {
+     .form-wrapper {
         padding: 20px;
     }
 
@@ -169,8 +187,9 @@ form .form-help :where(label, a) {
     }
 
     .form-wrapper {
-        width: 100%;
-        top: 43%;
+        width: 90%;
+        top: 48%;
+        height:50%;
     }
 
     .form-wrapper form {
